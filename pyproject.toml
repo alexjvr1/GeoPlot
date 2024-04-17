@@ -1,0 +1,29 @@
+[project]
+name = "GeoPlot"
+version = "0.0.1"
+description = "A tool to plot sample locations on a topographic map"
+authors = ["Alexandra Jansen van Rensburg <jvromics@gmail.com>"]
+licence = "MIT"
+homepage = "https://github.com/alexjvr1/GeoPlot/"
+repository = "https://github.com/alexjvr1/GeoPlot/"
+readme = "README.md"
+keywords = [
+    "boinformatics",
+    "sampling map", 
+    "topographical map",
+    "visualization",
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+include = ["tests"]
+
+[project.dependencies]
+dependency1 = "^1.0"
+dependency2 = "^2.0"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=src --tb=line --cov-report=xml --cov-report=term"
+testpaths = ["tests"]
